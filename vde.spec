@@ -5,7 +5,7 @@ Version:	1.5.7
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://dl.sourgeforge.net/vde/%{name}-%{version}.tgz
+Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tgz
 URL:		http://sourceforge.net/projects/vde/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
