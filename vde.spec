@@ -9,7 +9,6 @@ Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tgz
 # Source0-md5:	d04cd1d9fb7bfe1662233d607d73c35a
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://sourceforge.net/projects/vde/
-BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
