@@ -1,0 +1,15 @@
+diff -dur -x '*~' vde-1.5.8.orig/qemu/Makefile.am vde-1.5.8/qemu/Makefile.am
+--- vde-1.5.8.orig/qemu/Makefile.am	2005-04-11 14:23:25.000000000 +0200
++++ vde-1.5.8/qemu/Makefile.am	2005-05-31 12:07:55.000000000 +0200
+@@ -6,8 +6,8 @@
+ EXTRA_DIST = README
+ 
+ install-exec-hook:
+-	rm -f $(bindir)/vdeqemu
+-	ln -s $(bindir)/vdeq $(bindir)/vdeqemu
++	rm -f $(DESTDIR)$(bindir)/vdeqemu
++	ln -s $(bindir)/vdeq $(DESTDIR)$(bindir)/vdeqemu
+ 
+ uninstall-local:
+-	rm -f $(bindir)/vdeqemu
++	rm -f $(DESTDIR)$(bindir)/vdeqemu
