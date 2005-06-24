@@ -1,5 +1,5 @@
 Summary:	VDE: Virtual Distributed Ethernet
-Summary(pl):	VDE: Wirtualny Rozproszony Ethernet
+Summary(pl):	VDE: wirtualny rozproszony ethernet
 Name:		vde
 Version:	1.5.9
 Release:	1
@@ -17,7 +17,7 @@ virtual ethernet: a single vde can be accessed by virtual and real
 computers.
 
 %description -l pl
-VDE: Wirtualny Rozproszony Ethernet. Narzêdzie to tworzy abstrakcyjny
+VDE: wirtualny rozproszony ethernet. Narzêdzie to tworzy abstrakcyjny
 wirtualny ethernet - pojedynczy vde mo¿e byæ dostêpny z wirtualnych
 jak i rzeczywistych komputerów.
 
