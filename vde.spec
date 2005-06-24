@@ -1,12 +1,12 @@
 Summary:	VDE: Virtual Distributed Ethernet
 Summary(pl):	VDE: Wirtualny Rozproszony Ethernet
 Name:		vde
-Version:	1.5.8
+Version:	1.5.9
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tgz
-# Source0-md5:	d04cd1d9fb7bfe1662233d607d73c35a
+Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tar.gz
+# Source0-md5:	13337f2317a51a8c441503a0b0c908ac
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://sourceforge.net/projects/vde/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README qemu/qemu-vde-HOWTO
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/libvdetap.so
 %{_mandir}/man1/*.1*
