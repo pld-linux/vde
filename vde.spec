@@ -9,6 +9,9 @@ Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tar.gz
 # Source0-md5:	13337f2317a51a8c441503a0b0c908ac
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://sourceforge.net/projects/vde/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
