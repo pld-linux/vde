@@ -3,7 +3,7 @@ Summary(pl):	VDE: wirtualny rozproszony ethernet
 Name:		vde
 Version:	1.5.9
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tar.gz
 # Source0-md5:	13337f2317a51a8c441503a0b0c908ac
@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/libvdetap.so
 %{_mandir}/man1/*.1*
