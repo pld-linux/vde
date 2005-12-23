@@ -12,6 +12,7 @@ URL:		http://sourceforge.net/projects/vde/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
+Conflicts:	qemu >= 8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
