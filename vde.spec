@@ -1,18 +1,16 @@
 Summary:	VDE: Virtual Distributed Ethernet
 Summary(pl):	VDE: wirtualny rozproszony ethernet
 Name:		vde
-Version:	1.5.9
+Version:	1.5.11
 Release:	1
 License:	GPL v2
 Group:		Networking/Utilities
-Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tar.gz
-# Source0-md5:	13337f2317a51a8c441503a0b0c908ac
-Patch0:		%{name}-DESTDIR.patch
+Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tar.bz2
+# Source0-md5:	00f739390a86fa5860a269ca157ee0f6
 URL:		http://sourceforge.net/projects/vde/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
-Conflicts:	qemu >= 8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,7 +25,6 @@ jak i rzeczywistych komputerów.
 
 %prep
 %setup -q 
-%patch0 -p1
 
 %build
 %{__libtoolize}
@@ -36,11 +33,16 @@ jak i rzeczywistych komputerów.
 %{__automake}
 %configure 
 
+%{__make}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install  \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{_bindir}/vdeqemu
+ln -sf vdeq $RPM_BUILD_ROOT%{_bindir}/vdeqemu
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/libvdetap.so
 %{_mandir}/man1/*.1*
