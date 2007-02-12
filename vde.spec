@@ -1,5 +1,5 @@
 Summary:	VDE: Virtual Distributed Ethernet
-Summary(pl.UTF-8):   VDE: wirtualny rozproszony ethernet
+Summary(pl.UTF-8):	VDE: wirtualny rozproszony ethernet
 Name:		vde
 Version:	1.5.11
 Release:	1
