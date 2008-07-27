@@ -2,7 +2,7 @@ Summary:	VDE: Virtual Distributed Ethernet
 Summary(pl.UTF-8):	VDE: wirtualny rozproszony ethernet
 Name:		vde
 Version:	1.5.11
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://dl.sourceforge.net/vde/%{name}-%{version}.tar.bz2
